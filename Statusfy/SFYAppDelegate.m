@@ -58,7 +58,7 @@ static NSString * const SFYPlayerDockIconPreferenceKey = @"YES";
         
         if ([self getPlayerStateVisibility]) {
             NSString *playerState = [self determinePlayerStateText];
-            titleText = [NSString stringWithFormat:@"%@  %@", titleText, playerState];
+            titleText = [NSString stringWithFormat:@"%@  %@", playerState, titleText];
         }
         
         self.statusItem.image = nil;
@@ -114,7 +114,7 @@ static NSString * const SFYPlayerDockIconPreferenceKey = @"YES";
         playerStateText = NSLocalizedString(@"►", nil);
     }
     else if ([playerStateConstant isEqualToString:@"kPSp"]) {
-        playerStateText = NSLocalizedString(@"▌▌", nil);
+        playerStateText = NSLocalizedString(@"◼", nil);
     }
     else {
         playerStateText = NSLocalizedString(@"◼", nil);
