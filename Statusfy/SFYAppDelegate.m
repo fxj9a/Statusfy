@@ -111,10 +111,10 @@ static NSString * const SFYPlayerDockIconPreferenceKey = @"YES";
     NSString *playerStateConstant = [[self executeAppleScript:@"get player state"] stringValue];
     
     if ([playerStateConstant isEqualToString:@"kPSP"]) {
-        playerStateText = NSLocalizedString(@"►", nil);
+        playerStateText = NSLocalizedString(@"▶", nil);
     }
     else if ([playerStateConstant isEqualToString:@"kPSp"]) {
-        playerStateText = NSLocalizedString(@"◼", nil);
+        playerStateText = NSLocalizedString(@"_", nil);
     }
     else {
         playerStateText = NSLocalizedString(@"◼", nil);
