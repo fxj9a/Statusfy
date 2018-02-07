@@ -58,7 +58,7 @@ static NSString * const SFYPlayerDockIconPreferenceKey = @"YES";
         
         if ([self getPlayerStateVisibility]) {
             NSString *playerState = [self determinePlayerStateText];
-            titleText = [NSString stringWithFormat:@"%@  %@", playerState, titleText];
+            titleText = [NSString stringWithFormat:@"%@ %@", playerState, titleText];
         }
         
         self.statusItem.image = nil;
